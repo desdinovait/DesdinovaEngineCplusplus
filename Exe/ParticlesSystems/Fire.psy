@@ -1,0 +1,28 @@
+/////////////////////////////////////////////////
+// Desdinova Engine - Particles Definition 1.0 //
+/////////////////////////////////////////////////
+
+//Properties
+string	Particle_Texture = "Textures\\Particles\\Particle1.bmp";
+float	Particle_MaxParticles = 6000.0f;
+float	Particle_NumToRelease = 10.0f;
+float	Particle_ReleaseInterval = 0.02f;
+float	Particle_LifeCycle = 1.0f;
+float	Particle_Size = 5.0f;
+float	Particle_VelocityVar = 3.0f;
+bool	Particle_AirResistence = false;
+float4  Particle_Color = {1.0f, 0.647f, 0.0f, 1.0f};
+float3  Particle_Position = {0.0f, 0.0f, 0.0f};
+float3  Particle_Wind = {0.0f, 0.0f, 0.0f};
+float3  Particle_Velocity = {0.0f, 7.0f, 0.0f};
+float3  Particle_Gravity = {0.0f, 0.0f, 0.0f};
+int	Particle_Type = 1;				//0=Point, 1=Cube, 2=Circle
+float3  Particle_Distance = {0.0f, 0.0f, 0.0f};
+bool	Particle_RelativeY = true;
+
+
+
+//Default Technique (do NOT cancel)
+technique Main
+{
+}

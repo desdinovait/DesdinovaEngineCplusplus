@@ -1,0 +1,49 @@
+Compilazione Desdinova Engine SourceCode
+----------------------------------------
+
+1. Installare Visual Studio .NET 2005
+
+2. Installare Microsoft DirectX SDK Update (aggiornate)
+
+3. Copiare la directory "Microsoft DirectX 9.0c - Extras" nella directory di lavoro delle DirectX SDK
+
+4. Avviare Visual Studio .NET 2005
+
+5. Aprire il menu "Tools" - "Options" - "Projects" - "VC++ Directories"
+
+
+INCLUDES:
+
+6. In "Include Files" inserire la directory degli INCLUDES delle DirectX (se non già presente)
+   (solitamente "C:\Program Files\Microsoft DirectX SDK (October 2006)\Include)
+
+7. In "Include Files" inserire la directory degli Extras delle DirectShow INCLUDES
+   (solitamente "C:\Program Files\Microsoft DirectX SDK (October 2006)\Microsoft DirectX 9.0c - Extras\DirectShow\Include")
+
+8. In "Include Files" inserire la directory di lavoro del Desdinova Engine
+   (solitamente "D:\Desdinova Project\Desdinova\Desdinova Engine")
+
+
+LIBRARIES:
+
+9. In "Library Files" inserire la drectory delle LIBS delle DirectX (se non già presente)
+   (solitamente "C:\Program Files\Microsoft DirectX SDK (October 2006)\Lib\x86")
+
+10. In "Library Files" inserire la directory degli Estras delle DirectShow LIBS
+   (solitamente "C:\Program Files\Microsoft DirectX SDK (October 2006)\Microsoft DirectX 9.0c - Extras\DirectShow\Lib\x86")
+
+11. In "Library Files" inserire la directory degli Estras delle DirectSound DLL
+   (solitamente "C:\Program Files\Microsoft DirectX SDK (October 2006)\Microsoft DirectX 9.0c - Extras\DirectSound\debug\x86")
+
+
+ALTRO:
+
+12. Includere in "Include Files" e "Library Files" le directory aggiuntive per librerie esterne
+    (es: PhysX SDK)
+
+
+AVVIo:
+
+13. Caricare la Solution DesdinovaEngine.sln
+
+14. Compilare

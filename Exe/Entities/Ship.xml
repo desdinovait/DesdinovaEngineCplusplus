@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Entity>
+	<Properties>
+		<Name>Rhinoceros</Name>
+	</Properties>
+	
+	<Models>
+		<Model>Models\\Hull.xml</Model>
+		<Active>1</Active>
+		<Anchor></Anchor>
+
+		<Child>
+			<Model>Models\\fire1.xml</Model>
+			<Active>1</Active>
+			<Anchor></Anchor>
+		</Child>
+
+		<Child>
+			<Model>Models\\fire2.xml</Model>
+			<Active>1</Active>
+			<Anchor></Anchor>
+		</Child>
+
+		<Child>
+			<Model>Models\\engine.xml</Model>
+			<Active>1</Active>
+			<Anchor></Anchor>
+
+			<Child>
+				<Model>Models\\engine1.xml</Model>
+				<Active>1</Active>
+				<Anchor></Anchor>
+
+				<Child>
+					<Model>Models\\Fire.xml</Model>
+					<Active>1</Active>
+					<Anchor></Anchor>
+				</Child>
+			</Child>
+
+			<Child>
+				<Model>Models\\Engine2.xml</Model>
+				<Active>1</Active>
+				<Anchor></Anchor>
+			</Child>
+		</Child>
+	</Models>
+
+
+	<Info>
+		<Author>Duff</Author>
+		<Date>10/03/2005</Date>
+		<Revision>26/03/2005</Revision>
+		<Comment></Comment>
+		<Other></Other>
+	</Info>
+</Entity>

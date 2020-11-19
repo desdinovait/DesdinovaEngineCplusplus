@@ -1,0 +1,61 @@
+/////////////////////////////////////////////
+// Desdinova Engine - Model Definition 1.0 //
+/////////////////////////////////////////////
+
+//Properties
+string	Model_Name = "mercury";
+int	Model_Lods = 6;
+bool	Model_Pickable = true;
+bool	Model_ScreenAligned = false;
+bool	Model_Cullable = true;
+bool	Model_Trascurable = true;
+float3	Model_Scale = {4.8f, 4.8f, 4.8f};
+
+//Files
+string	Model_File_Shader = "Shaders\\Lighting.fx";
+string	Model_File_Material = "Materials\\Iron.fx";
+string	Model_File_Mesh = "Meshes\\sphere.x";
+
+//Debug
+int	Model_Debug_FillMode = 0;			//0=Solid, 1=Wireframe, 2=Point 
+int	Model_Debug_BoundingType = 1;			//0=No bounding, 1=Box, 2=Sphere
+bool	Model_Debug_ShowAxes = 0;			//0=No axes, 1=Show axes
+
+//Physics
+float	Model_Physics_Mass = 1;				//Mass
+int	Model_Physics_Class = 0;			//0=Sphere, 1=Box, 2=Mesh, (Mesh class 2 not yet implemented)
+bool	Model_Physics_CCD = false;			//Enable CCD(Continuous Collision Detection)
+float	Model_Physics_CCDScale = 0.8f;			//Scale factor for CCD Skeleton (0.8 = 80% of model's dimensions)
+float	Model_Physics_CCDMotionThreshold = 0.0f;	//Minimum velocity for the use of CCD (0=CCD enabled for any velocity)
+bool	Model_Physics_Kinematic = false;		//Kinematic actor (not move in response to user forces,gravity,collisionimpulses,or if tugged by joints and lacks real velocity or momentum)
+
+//Texture 0
+string	Model_Texture0_Filename = "Textures\\Planets\\Venus.jpg";
+float4  Model_Texture0_RGBA = {1.0f, 1.0f, 1.0f, 1.0f};
+bool	Model_Texture0_MipMaps = true;
+
+//Texture 1
+string	Model_Texture1_Filename = "Textures\\Planets\\Earth_Normal.dds";
+float4  Model_Texture1_RGBA = {1.0f, 1.0f, 1.0f, 1.0f};
+bool	Model_Texture1_MipMaps = true;
+
+//Blend factor
+float	Model_Texture_BlendFactor = 0.5f;		//Modulate alpha for Texture1 and Texture2
+
+//Texture compute normals
+string	Model_TextureNormals_Filename = "Textures\\Planets\\Earth_Normal.dds";
+float4  Model_TextureNormals_RGBA = {1.0f, 1.0f, 1.0f, 1.0f};
+bool	Model_TextureNormals_MipMaps = true;
+
+//Infos
+string	Model_Info_Author = "Mondo";
+string	Model_Info_Date = "13/02/2006";
+string	Model_Info_Revision = "14/02/2007";
+string	Model_Info_Comment = "Created with Maya 7.0";
+string	Model_Info_Other = "";
+
+
+//Default Technique (do NOT cancel)
+technique Main
+{
+}

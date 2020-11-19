@@ -1,0 +1,793 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DIALOG_MAIN DIALOGEX 0, 0, 464, 374
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_NOPARENTNOTIFY | WS_EX_CONTROLPARENT | WS_EX_APPWINDOW
+CAPTION "Desdinova Modeler"
+MENU MENU_MAIN
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        RENDER_ZONE,0,23,463,338,ES_AUTOHSCROLL | WS_DISABLED | 
+                    NOT WS_TABSTOP
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    DIALOG_MAIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 461
+        BOTTOMMARGIN, 370
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Italian (Italy) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DIALOG_ABOUT DIALOGEX 0, 0, 256, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
+CAPTION "About..."
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "OK",OK_BUT,198,164,54,14,0,WS_EX_STATICEDGE
+    CONTROL         107,IDC_IMAGE,"Static",SS_BITMAP | SS_CENTERIMAGE,4,96,
+                    248,62,WS_EX_DLGMODALFRAME
+    LTEXT           "verX.XX",LAB_ABOUT_TITLE,48,12,108,11,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Desdinova Modeler is sold ""as is"" and without any warrenty as to merchantability or fitness for a particular purpose or ant other warrenties either expressed or implied.",
+                    IDC_STATIC,48,30,186,36
+    LTEXT           "The autor will not be liable for data loss, damages, loss of profits or any other kind of loss while using or misusing this software.",
+                    IDC_STATIC,48,54,192,24
+    ICON            ICON1,IDC_STATIC,12,12,20,20,0,WS_EX_CLIENTEDGE
+    CTEXT           "..:: powered by ::..",IDC_STATIC,6,84,246,10
+END
+
+DIALOG_SPLASH DIALOGEX 0, 0, 434, 225
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         155,IDC_STATIC,"Static",SS_BITMAP,4,4,426,217
+END
+
+DIALOG_LIGHTSMANAGER DIALOGEX 0, 0, 154, 271
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Lights Manager"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_COMBO1,42,6,108,72,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        TXT_LIGHT_DIFFUSE_R,48,84,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_LIGHT_DIFFUSE_G,72,84,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_LIGHT_DIFFUSE_B,96,84,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_LIGHT_DIFFUSE_A,120,84,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Diffuse :",IDC_STATIC,12,84,36,8
+    CONTROL         "Range sphere",CHK_LIGHT_RANGE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,234,60,12
+    LTEXT           "Light :",IDC_STATIC,6,6,30,12
+    PUSHBUTTON      "New",IDC_BUTTON2,42,42,54,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Delete",IDC_BUTTON3,96,42,54,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Set",BUT_LIGHT_SET,96,246,48,12,0,WS_EX_STATICEDGE
+    LTEXT           "Type :",IDC_STATIC,6,24,36,12
+    COMBOBOX        IDC_COMBO3,42,24,108,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        TXT_LIGHT_AMBIENT_R,48,96,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_LIGHT_AMBIENT_G,72,96,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_LIGHT_AMBIENT_B,96,96,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_LIGHT_AMBIENT_A,120,96,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Ambient :",IDC_STATIC,12,96,36,8
+    EDITTEXT        TXT_LIGHT_SPECULAR_R,48,108,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_LIGHT_SPECULAR_G,72,108,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_LIGHT_SPECULAR_B,96,108,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_LIGHT_SPECULAR_A,120,108,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Specular :",IDC_STATIC,12,108,36,8
+    EDITTEXT        TXT_LIGHT_POS_X,48,137,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_LIGHT_POS_Y,72,137,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_LIGHT_POS_Z,96,137,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Position :",IDC_STATIC,12,137,36,8
+    EDITTEXT        TXT_LIGHT_DIR_X,48,150,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_LIGHT_DIR_Y,72,150,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_LIGHT_DIR_Z,96,150,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Direction :",IDC_STATIC,12,150,36,8
+    EDITTEXT        TXT_LIGHT_ATT_0,48,180,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_LIGHT_ATT_1,72,180,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_LIGHT_ATT_2,96,180,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Attenuat :",IDC_STATIC,12,180,36,8
+    EDITTEXT        TXT_LIGHT_RANGE,48,198,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Range :",IDC_STATIC,12,198,36,8
+    EDITTEXT        TXT_LIGHT_FALLOFF,120,198,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Falloff :",IDC_STATIC,84,198,36,8
+    EDITTEXT        TXT_LIGHT_PHI,48,216,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Phi :",IDC_STATIC,12,216,36,12
+    EDITTEXT        TXT_LIGHT_THETA,120,216,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Theta :",IDC_STATIC,84,216,36,8
+    CONTROL         "Position sphere",CHK_LIGHT_POS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,246,66,12
+    GROUPBOX        "Properties : ",IDC_STATIC,6,60,144,204
+    CTEXT           "R",IDC_STATIC,48,72,24,8
+    CTEXT           "G",IDC_STATIC,72,72,24,8
+    CTEXT           "B",IDC_STATIC,96,72,24,8
+    CTEXT           "A",IDC_STATIC,120,72,24,8
+    CTEXT           "X",IDC_STATIC,48,126,24,8
+    CTEXT           "Y",IDC_STATIC,72,126,24,8
+    CTEXT           "Z",IDC_STATIC,96,126,24,8
+    CTEXT           "0",IDC_STATIC,48,168,24,8
+    CTEXT           "1",IDC_STATIC,72,168,24,8
+    CTEXT           "2",IDC_STATIC,96,168,24,8
+END
+
+DIALOG_CAMERACONTROL DIALOGEX 0, 0, 113, 119
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Camera Control"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Pos Y :",IDC_STATIC,12,25,30,12
+    LTEXT           "Pos X :",IDC_STATIC,12,12,30,12
+    LTEXT           "Pos Z :",IDC_STATIC,12,36,30,12
+    GROUPBOX        "",IDC_STATIC,6,-2,102,114
+    LTEXT           "View Y :",IDC_STATIC,12,66,30,12
+    PUSHBUTTON      "",BUT_CAM_SETSPEED,90,96,12,12,0,WS_EX_STATICEDGE
+    LTEXT           "View X :",IDC_STATIC,12,54,30,12
+    LTEXT           "View Z :",IDC_STATIC,12,78,30,12
+    LTEXT           "Vel :",IDC_STATIC,12,96,30,12
+    EDITTEXT        TXT_CAM_SPEED,42,96,48,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    CTEXT           "\\",LAB_CAM_POSX,42,12,60,12,SS_SUNKEN
+    CTEXT           "\\",LAB_CAM_POSY,42,24,60,12,SS_SUNKEN
+    CTEXT           "\\",LAB_CAM_POSZ,42,36,60,12,SS_SUNKEN
+    CTEXT           "\\",LAB_CAM_VIEWX,42,54,60,12,SS_SUNKEN
+    CTEXT           "\\",LAB_CAM_VIEWY,42,66,60,12,SS_SUNKEN
+    CTEXT           "\\",LAB_CAM_VIEWZ,42,78,60,12,SS_SUNKEN
+END
+
+DIALOG_MODELSMANAGER DIALOGEX 0, 0, 134, 162
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Models Manager"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        CB_LODID,55,6,66,48,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_CLIENTEDGE
+    EDITTEXT        TXT_LODDISTANCE,55,51,66,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "\\",LAB_FACES,55,22,66,12,0,WS_EX_STATICEDGE
+    LTEXT           "Faces :",IDC_STATIC,8,22,34,12
+    CTEXT           "\\",LAB_VERTICES,55,36,66,12,0,WS_EX_STATICEDGE
+    LTEXT           "Vertices :",IDC_STATIC,8,36,34,12
+    CTEXT           "\\",LAB_HEIGHT,55,73,66,12,SS_SUNKEN
+    CTEXT           "\\",LAB_WIDTH,55,87,66,12,SS_SUNKEN
+    CTEXT           "\\",LAB_DEPTH,55,102,66,12,SS_SUNKEN
+    LTEXT           "Width :",IDC_STATIC,8,87,27,12
+    LTEXT           "Height :",IDC_STATIC,8,73,29,12
+    LTEXT           "Depth :",IDC_STATIC,8,102,27,12
+    CTEXT           "\\",LAB_RADIUS,55,118,66,12,SS_SUNKEN
+    LTEXT           "Radius :",IDC_STATIC,8,118,30,12
+    LTEXT           "LOD id :",IDC_STATIC,8,6,34,12
+    LTEXT           " Distance :",IDC_STATIC,6,51,34,12
+    PUSHBUTTON      "Reload",BUT_RELOAD,78,144,42,12,0,WS_EX_STATICEDGE
+END
+
+DIALOG_FOG DIALOGEX 0, 0, 112, 172
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Fog Manager"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Vertex fog",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,36,
+                    24,54,12
+    CONTROL         "Pixel (table) fog",IDC_RADIO2,"Button",
+                    BS_AUTORADIOBUTTON,36,36,72,12
+    CONTROL         "Liner",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,36,54,36,
+                    12
+    CONTROL         "Exp",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,36,66,36,12
+    CONTROL         "Exp2",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,36,78,36,
+                    12
+    LTEXT           "Start :",IDC_STATIC,6,96,36,12
+    LTEXT           "End :",IDC_STATIC,6,108,36,12
+    LTEXT           "Density :",IDC_STATIC,6,120,36,12
+    EDITTEXT        IDC_EDIT1,36,96,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,36,108,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,36,120,42,12,ES_AUTOHSCROLL
+    LTEXT           "Color :",IDC_STATIC,6,138,24,12
+    EDITTEXT        IDC_EDIT4,36,138,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,60,138,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,84,138,24,12,ES_AUTOHSCROLL
+    LTEXT           "Type :",IDC_STATIC,6,24,30,12
+    LTEXT           "Mode :",IDC_STATIC,6,54,24,12
+    CONTROL         "Enable    ",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,6,45,12,WS_EX_RIGHT
+    PUSHBUTTON      "Set",IDC_BUTTON1,66,156,42,12,0,WS_EX_STATICEDGE
+END
+
+DIALOG_ENTITIESMANAGER DIALOGEX 0, 0, 210, 215
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Entities Editor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",TREE_MANAGER,"SysTreeView32",TVS_HASLINES | 
+                    TVS_DISABLEDRAGDROP | WS_TABSTOP,6,6,57,204,
+                    WS_EX_STATICEDGE
+    CONTROL         "Enable Child",CHK_CHILD_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,69,39,54,9
+    CONTROL         "Enable Anchor",CHK_ANCHOR_ENABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,69,50,60,9
+    CONTROL         "Active",CHK_CHILD_ACTIVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,69,63,36,9
+    EDITTEXT        TXT_CHILD_FILENAME,68,17,139,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_ANCHORPOSX,98,153,36,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_ANCHORPOSY,134,153,36,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_ANCHORPOSZ,170,153,36,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_ANCHORROTX,98,166,36,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_ANCHORROTY,134,166,36,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_ANCHORROTZ,170,166,36,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "Add...",BUT_CHILD_ADD,170,54,36,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Remove",BUT_CHILD_REMOVE,170,66,36,12,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Set",BUT_CHILD_SET,169,199,37,12,0,WS_EX_STATICEDGE
+    LTEXT           "Filename :",IDC_STATIC,69,6,39,10
+    LTEXT           "Position:",LAB_POS,67,154,28,8
+    LTEXT           "Rotation:",LAB_ROT,67,168,30,8
+    LTEXT           "Children :",IDC_STATIC,153,39,32,9
+    CTEXT           "",TXT_CHILD_TOTAL,187,39,18,10,SS_SUNKEN
+    EDITTEXT        TXT_ANCHORSCALEX,98,179,35,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_ANCHORSCALEY,134,179,36,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_ANCHORSCALEZ,170,179,36,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Scale:",LAB_SCALE,67,181,27,8
+    EDITTEXT        TXT_CHILDPOSX,99,97,36,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_CHILDPOSY,135,97,36,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_CHILDPOSZ,171,97,36,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_CHILDROTX,99,110,36,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_CHILDROTY,135,110,36,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_CHILDROTZ,171,110,36,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Position:",LAB_POS2,67,98,28,8
+    LTEXT           "Rotation:",LAB_ROT2,67,111,30,8
+    EDITTEXT        TXT_CHILDSCALEX,99,123,35,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_CHILDSCALEY,135,123,36,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_CHILDSCALEZ,171,123,36,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Scale:",LAB_SCALE2,67,125,21,8
+    CTEXT           "-- Current Model Matrix --",LAB_POS3,99,86,107,10
+    CTEXT           "-- Anchor Matrix --",LAB_POS4,98,142,107,10
+END
+
+DIALOG_PARTICLESMANAGER DIALOGEX 0, 0, 208, 343
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Particles System Manager"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Max :",IDC_STATIC,12,36,24,12
+    EDITTEXT        TXT_PAR_MAX,54,36,47,12,ES_CENTER | ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "N° release :",IDC_STATIC,12,54,42,12
+    EDITTEXT        TXT_PAR_RELEASE,54,54,47,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Interval :",IDC_STATIC,12,72,36,12
+    EDITTEXT        TXT_PAR_INTERVAL,54,72,47,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Life cycle :",IDC_STATIC,114,36,42,12
+    EDITTEXT        TXT_PAR_LIFE,150,36,48,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Size :",IDC_STATIC,114,54,24,12
+    EDITTEXT        TXT_PAR_SIZE,150,54,48,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Velocity :",IDC_STATIC,114,73,36,12
+    EDITTEXT        TXT_PAR_VELOCITY,150,71,48,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_PAR_POSX,150,180,48,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_PAR_POSY,150,193,48,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_PAR_POSZ,150,204,48,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "X :",IDC_STATIC,138,180,12,12
+    LTEXT           "Y :",IDC_STATIC,138,193,12,12
+    LTEXT           "Z :",IDC_STATIC,138,204,12,12
+    LTEXT           "Position",IDC_STATIC,108,180,26,12
+    EDITTEXT        TXT_PAR_VELX,54,240,48,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_PAR_VELY,54,252,48,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_PAR_VELZ,54,264,48,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "X :",IDC_STATIC,42,240,12,12
+    LTEXT           "Y :",IDC_STATIC,42,252,12,12
+    LTEXT           "Z :",IDC_STATIC,42,264,12,12
+    LTEXT           "Velocity",IDC_STATIC,12,240,26,8
+    EDITTEXT        TXT_PAR_GRAVX,54,282,48,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_PAR_GRAVY,54,295,48,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_PAR_GRAVZ,54,306,48,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "X :",IDC_STATIC,42,282,12,12
+    LTEXT           "Y :",IDC_STATIC,42,295,12,12
+    LTEXT           "Z :",IDC_STATIC,42,306,12,12
+    LTEXT           "Gravity",IDC_STATIC,12,282,24,12
+    EDITTEXT        TXT_PAR_R,54,90,48,12,ES_CENTER | ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_PAR_G,54,102,48,12,ES_CENTER | ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_PAR_B,54,114,48,12,ES_CENTER | ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "R :",IDC_STATIC,42,90,12,12
+    LTEXT           "G :",IDC_STATIC,42,102,12,12
+    LTEXT           "B :",IDC_STATIC,42,114,12,12
+    LTEXT           "Color",IDC_STATIC,12,90,24,8
+    EDITTEXT        TXT_PAR_A,54,125,48,12,ES_CENTER | ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "A :",IDC_STATIC,42,125,12,12
+    PUSHBUTTON      "Set",BUT_PARTICLES_SET,161,328,42,12,0,WS_EX_STATICEDGE
+    EDITTEXT        TXT_PAR_WINDX,150,240,48,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_PAR_WINDY,150,252,48,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_PAR_WINDZ,150,264,48,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "X :",IDC_STATIC,138,240,12,12
+    LTEXT           "Y :",IDC_STATIC,138,253,12,12
+    LTEXT           "Z :",IDC_STATIC,138,264,12,12
+    LTEXT           "Wind",IDC_STATIC,114,240,23,12
+    CONTROL         "Air Resist.",CHK_PAR_RESISTENCE,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,150,278,48,12
+    PUSHBUTTON      "...",BUT_PARTICLES_LOAD,186,18,12,12,0,WS_EX_STATICEDGE
+    LTEXT           "Texture :",IDC_STATIC,12,18,36,12
+    LTEXT           "",LAB_PAR_TEXTURE,54,18,131,12,SS_SUNKEN
+    PUSHBUTTON      "...",BUT_PARTICLES_COLOR,102,90,12,12,0,
+                    WS_EX_STATICEDGE
+    COMBOBOX        CB_PAR_TYPE,54,162,48,54,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Type :",IDC_STATIC,12,162,30,12
+    EDITTEXT        TXT_PAR_DISTANCEX,54,180,48,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_PAR_DISTANCEY,54,192,36,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        TXT_PAR_DISTANCEZ,54,204,48,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "X :",IDC_STATIC,42,181,12,12
+    LTEXT           "Y :",IDC_STATIC,42,194,12,12
+    LTEXT           "Z :",IDC_STATIC,42,205,12,12
+    LTEXT           "Distance",IDC_STATIC,12,180,28,12
+    GROUPBOX        "Particles : ",IDC_STATIC,6,6,198,138
+    GROUPBOX        "Emitter : ",IDC_STATIC,6,150,198,72
+    GROUPBOX        "Forces : ",IDC_STATIC,6,228,198,96
+    CONTROL         "X",CHK_PAR_RELATIVEY,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,91,194,11,10,WS_EX_STATICEDGE
+END
+
+DIALOG_OPEN DIALOGEX 0, 0, 84, 89
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Open..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Model",BUT_OPEN_MODEL,6,6,72,18,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Particles System",BUT_OPEN_PAR,6,42,72,18,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Entity",BUT_OPEN_ENTITY,6,24,72,18,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Cancel",BUT_OPEN_CANCEL,6,66,72,18,0,WS_EX_STATICEDGE
+END
+
+DIALOG_NEW DIALOGEX 0, 0, 84, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "New..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Particles System",BUT_NEW_PAR,6,24,72,18,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Entity",BUT_NEW_ENTITY,6,6,72,18,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Cancel",BUT_NEW_CANCEL,6,48,72,18,0,WS_EX_STATICEDGE
+END
+
+DIALOG_SAVE DIALOGEX 0, 0, 154, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        TXT_SAVE_NAME,6,18,144,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Save",BUT_SAVE_SAVE,66,36,42,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Cancel",BUT_SAVE_CANCEL,108,36,42,12,0,WS_EX_STATICEDGE
+    LTEXT           "Insert name (without extension):",IDC_STATIC,6,6,108,8
+END
+
+DIALOG_RENDERZONE1 DIALOGEX 0, 0, 274, 193
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_WINDOWEDGE
+CAPTION "Render Zone 1"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+DIALOG_RENDERZONE2 DIALOGEX 0, 0, 159, 105
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_WINDOWEDGE
+CAPTION "Render Zone 2"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    DIALOG_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    DIALOG_SPLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 427
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    DIALOG_LIGHTSMANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+
+    DIALOG_CAMERACONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 106
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    DIALOG_MODELSMANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    DIALOG_FOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 105
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    DIALOG_ENTITIESMANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    DIALOG_PARTICLESMANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 336
+    END
+
+    DIALOG_OPEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 77
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    DIALOG_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 77
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    DIALOG_SAVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    DIALOG_RENDERZONE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    DIALOG_RENDERZONE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ICON1                   ICON                    "Icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MENU_MAIN MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "New...",                      MENU_FILE_NEW
+        MENUITEM "Open...",                     MENU_FILE_OPEN
+        MENUITEM "Close",                       MENU_FILE_CLOSE
+        MENUITEM "Save...",                     MENU_FILE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        MENU_FILE_EXIT
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Entities Manager...",         MENU_EDIT_ENTITIESMANAGER
+        MENUITEM "Models Manager...",           MENU_EDIT_MODELSMANAGER
+        MENUITEM "Particles System Manager...", MENU_EDIT_PARTICLESMANAGER
+        MENUITEM "Lights Manager...",           MENU_EDIT_LIGHTSMANAGER
+        MENUITEM "Camera Control...",           MENU_EDIT_CAMERACONTROL
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "Frustrum culling",            MENU_VIEW_FRUSTRUMCULLING
+        , CHECKED
+        MENUITEM "Levels of Detail (LOD)",      MENU_VIEW_LOD, CHECKED
+        MENUITEM "Wireframe",                   MENU_VIEW_WIREFRAME
+        MENUITEM "Lighting",                    MENU_VIEW_LIGHTING
+        POPUP "Bounding"
+        BEGIN
+            MENUITEM "None",                        MENU_BOUNDING_NONE
+            MENUITEM "Box",                         MENU_BOUNDING_BOX
+            MENUITEM "Sphere",                      MENU_BOUNDING_SPHERE
+        END
+        MENUITEM "Axes",                        MENU_VIEW_AXES, CHECKED
+        MENUITEM "Grid",                        MENU_VIEW_GRID
+        MENUITEM "Informations",                MENU_VIEW_INFO, CHECKED
+    END
+    POPUP "Utilities"
+    BEGIN
+        MENUITEM "Capture screenshot",          MENU_UTILITIES_CAPTURE
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "Help Contents and Index",     MENU_HELP_HELP
+        MENUITEM "Desdinova Engine Homepage",   MENU_HELP_SITE
+        MENUITEM SEPARATOR
+        MENUITEM "About...",                    MENU_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VER_INFO VERSIONINFO
+ FILEVERSION 1,0,3,0
+ PRODUCTVERSION 1,0,3,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041004b0"
+        BEGIN
+            VALUE "Comments", "Desdinova Modeler powered by Desdinova Engine"
+            VALUE "FileDescription", "Desdinova Modeler"
+            VALUE "FileVersion", "1, 0, 3, 0"
+            VALUE "InternalName", "Modeler"
+            VALUE "LegalCopyright", "Copyright (C) 2002/2005"
+            VALUE "OriginalFilename", "DesdinovaModeler.exe"
+            VALUE "ProductName", "Desdinova Modeler"
+            VALUE "ProductVersion", "1, 0, 3, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x410, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_DESDINOVA           BITMAP                  "Title.bmp"
+IDB_SPLASH              BITMAP                  "Editor.bmp"
+IDB_TOOLBAR2            BITMAP                  "ToolBar2.bmp"
+IDB_PARENT              BITMAP                  "Child.bmp"
+IDB_CHILD               BITMAP                  "Parent.bmp"
+#endif    // Italian (Italy) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

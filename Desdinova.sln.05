@@ -1,0 +1,43 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Desdinova Game", "Desdinova Game\Desdinova Game.vcproj", "{294205DF-3DDC-4151-9F5E-8F6FAF431373}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Desdinova Modeler", "Desdinova Modeler\Desdinova Modeler.vcproj", "{247BACFD-8CC0-4071-B421-8332B8DE2BE4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9FF3F41F-5600-4568-ABF6-8DB422CA8D74} = {9FF3F41F-5600-4568-ABF6-8DB422CA8D74}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Desdinova Configurator", "Desdinova Configurator\Desdinova Configurator.vcproj", "{37522BCE-4B8D-433B-9B8B-558829755DF5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9FF3F41F-5600-4568-ABF6-8DB422CA8D74} = {9FF3F41F-5600-4568-ABF6-8DB422CA8D74}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Desdinova Engine", "Desdinova Engine\Desdinova Engine.vcproj", "{9FF3F41F-5600-4568-ABF6-8DB422CA8D74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{294205DF-3DDC-4151-9F5E-8F6FAF431373}.Debug|Win32.ActiveCfg = Debug|Win32
+		{294205DF-3DDC-4151-9F5E-8F6FAF431373}.Debug|Win32.Build.0 = Debug|Win32
+		{294205DF-3DDC-4151-9F5E-8F6FAF431373}.Release|Win32.ActiveCfg = Release|Win32
+		{294205DF-3DDC-4151-9F5E-8F6FAF431373}.Release|Win32.Build.0 = Release|Win32
+		{247BACFD-8CC0-4071-B421-8332B8DE2BE4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{247BACFD-8CC0-4071-B421-8332B8DE2BE4}.Debug|Win32.Build.0 = Debug|Win32
+		{247BACFD-8CC0-4071-B421-8332B8DE2BE4}.Release|Win32.ActiveCfg = Release|Win32
+		{247BACFD-8CC0-4071-B421-8332B8DE2BE4}.Release|Win32.Build.0 = Release|Win32
+		{37522BCE-4B8D-433B-9B8B-558829755DF5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{37522BCE-4B8D-433B-9B8B-558829755DF5}.Debug|Win32.Build.0 = Debug|Win32
+		{37522BCE-4B8D-433B-9B8B-558829755DF5}.Release|Win32.ActiveCfg = Release|Win32
+		{37522BCE-4B8D-433B-9B8B-558829755DF5}.Release|Win32.Build.0 = Release|Win32
+		{9FF3F41F-5600-4568-ABF6-8DB422CA8D74}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9FF3F41F-5600-4568-ABF6-8DB422CA8D74}.Debug|Win32.Build.0 = Debug|Win32
+		{9FF3F41F-5600-4568-ABF6-8DB422CA8D74}.Release|Win32.ActiveCfg = Release|Win32
+		{9FF3F41F-5600-4568-ABF6-8DB422CA8D74}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

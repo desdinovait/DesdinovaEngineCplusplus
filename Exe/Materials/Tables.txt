@@ -1,0 +1,29 @@
+Table of Density (gm/cm^3)
+(to convert in gm/m^3 multiply *1000)
+
+Liquid:
+Water at 4°C	1.0000 
+Water at 20°C	0.998 
+Gasoline	0.70 
+Mercury		13.6 
+Milk		1.03 
+
+Solids:  
+Magnesium	1.7 
+Aluminum	2.7 
+Copper		8.3-9.0 
+Gold		19.3 
+Iron		7.8 
+Lead		11.3 
+Platinum	21.4 
+Uranium		18.7 
+Osmium		22.5 
+Ice at 0 C	0.92 
+
+Gases:
+Air		0.001293 
+Carb dioxide	0.001977 
+Carb monoxide 	0.00125 
+Hydrogen	0.00009 
+Helium		0.000178 
+Nitrogen	0.001251 

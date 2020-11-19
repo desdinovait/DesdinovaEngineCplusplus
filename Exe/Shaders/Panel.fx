@@ -1,0 +1,63 @@
+//////////////////////////////////////////////////////////////
+// File: Panel.fx
+// Author: Duff
+// Date Created: 28/02/2007
+//////////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////
+// Variables
+//////////////////////////////////////////////////////////////
+float4		panelColor;
+
+
+//////////////////////////////////////////////////////////////
+// Structures
+//////////////////////////////////////////////////////////////
+//Application to vertex shader
+struct A2V_Panel
+{ 
+	float4 Pos	: POSITION;
+	float2 Tex0	: TEXCOORD0;
+	float4 Diffuse  : COLOR0;
+};
+
+//Vertex shader to pixel shader
+struct V2P_Panel
+{
+	float4 Pos	: POSITION;
+	float2 Tex0	: TEXCOORD0;
+	float4 Diffuse  : COLOR0;
+};
+
+
+//////////////////////////////////////////////////////////////
+// VS and PS Shaders
+//////////////////////////////////////////////////////////////
+void VS_Panel( in A2V_Panel IN, out V2P_Panel OUT) 
+{
+	OUT.Pos	= mul( IN.Pos, matWorldViewProj );
+	OUT.Tex0 = IN.Tex0;
+	OUT.Diffuse.rgb = panelColor.rgb;
+	OUT.Diffuse.a   = panelColor.a;
+}
+
+float4 PS_Panel( in V2P_Panel IN) : COLOR
+{
+	float4 TexColor = tex2D( textureSampler0, IN.Tex0 );
+	float3 Diffuse = IN.Diffuse.rgb * TexColor.rgb;
+	return float4(Diffuse, TexColor.a * IN.Diffuse.a); 
+}
+
+
+//////////////////////////////////////////////////////////////
+//Techniques
+//////////////////////////////////////////////////////////////
+technique Panel
+{
+	pass P0
+	{
+		VertexShader = compile vs_1_0 VS_Panel();
+		PixelShader  = compile ps_1_0 PS_Panel();
+	}
+}

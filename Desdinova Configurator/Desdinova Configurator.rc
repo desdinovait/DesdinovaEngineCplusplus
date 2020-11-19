@@ -1,0 +1,203 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Italian (Italy) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DIALOG_SETTINGS DIALOGEX 0, 0, 370, 311
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "\\"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        SETTINGS_ADAPTER,192,24,168,48,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Windowed",SETTINGS_WINDOWED,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,192,42,58,12
+    CONTROL         "Fullscreen",SETTINGS_FULLSCREEN,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,264,42,90,12
+    COMBOBOX        SETTINGS_ADAPTERFORMAT,192,60,168,72,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        SETTINGS_RESOLUTION,192,78,168,91,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        SETTINGS_REFRESH,192,96,168,91,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        SETTINGS_BACKBUFFER,192,138,168,66,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        SETTINGS_DEPTHBUFFER,192,156,168,50,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        SETTINGS_MULTISAMPLETYPE,192,174,168,73,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        SETTINGS_MULTISAMPLEQUALITY,192,192,168,49,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        SETTINGS_VERTEXPROCESSING,192,210,168,60,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        SETTINGS_INTERVAL,192,228,168,44,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Ok",SETTINGS_OK,252,290,54,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Cancel",SETTINGS_CANCEL,309,290,54,14,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "Depth/Stencil Buffer Format:",IDC_STATIC,90,156,96,12
+    GROUPBOX        "Device settings",IDC_STATIC,84,120,282,162
+    GROUPBOX        "Display mode settings",IDC_STATIC,84,6,282,108
+    LTEXT           "Adapter Name:",IDC_STATIC,90,24,90,12
+    LTEXT           "Window Mode:",IDC_STATIC,90,42,90,12
+    LTEXT           "Adapter Format:",IDC_STATIC,90,60,90,12
+    LTEXT           "Resolution:",IDC_STATIC,90,78,96,12
+    LTEXT           "Back Buffer Format:",IDC_STATIC,90,138,102,12
+    LTEXT           "Multisample Type:",IDC_STATIC,90,174,96,12
+    LTEXT           "Vertex Processing:",IDC_STATIC,90,210,90,12
+    LTEXT           "Multisample Quality:",IDC_STATIC,90,192,96,12
+    LTEXT           "Present Interval:",IDC_STATIC,90,228,90,12
+    LTEXT           "www.desdinova.altervista.org",SETTINGS_LINK,6,294,120,
+                    10,SS_NOTIFY
+    LTEXT           "Refresh Rate:",IDC_STATIC,90,96,96,12
+    CONTROL         134,IDC_STATIC,"Static",SS_BITMAP,6,6,72,246
+    LTEXT           "Minimum Vertex Shader:",IDC_STATIC,90,246,90,12
+    LTEXT           "Minimum Pixel Shader:",IDC_STATIC,90,264,72,12
+    COMBOBOX        SETTINGS_VS,192,246,54,60,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        SETTINGS_PS,192,264,54,60,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    DIALOG_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,0
+ PRODUCTVERSION 1,2,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041004b0"
+        BEGIN
+            VALUE "FileDescription", "Desdinova Engine Configurator"
+            VALUE "FileVersion", "1, 2, 0, 0"
+            VALUE "InternalName", "DesdinovaConfigurator"
+            VALUE "LegalCopyright", "Copyright (C) Ferla Daniele 2006"
+            VALUE "OriginalFilename", "DesdinovaConfigurator.exe"
+            VALUE "ProductName", "Desdinova Engine Configurator"
+            VALUE "ProductVersion", "1, 2, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x410, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "Icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+BITMAP_TITLE2           BITMAP                  "Title2.bmp"
+#endif    // Italian (Italy) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

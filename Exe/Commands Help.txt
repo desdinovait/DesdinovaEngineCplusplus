@@ -1,0 +1,35 @@
+Desdinova Engine
+-----------------
+
+
+Main Commands
+..............
+
+- COMMAND:		EFFECT:
+- W			Camera Forward
+- A			Camera Backward
+- S			Camera Left
+- D			Camera Right
+- Mouse Right		Enable/Disable camera movement
+- Mouse Left		Piking objects
+- F6			Enable console
+- F12			Take screenshot
+- ESC			Exit
+- P			Enable/Disable scene information
+- P			Next post-processing effects
+- O			Prev post-processing effects
+- C			Enable/Disable cinematographic effect
+- F                     Select bounding type (Box, Sphere, None)
+
+
+Console Commands
+.................
+
+- COMMAND:		EFFECT:						PARAMETERS:
+- cmd_screenshot	Take a screenshot				
+- cmd_exit		Close application				
+- cmd_close		Close console					
+- cmd_info		Show current rendering information		0 or 1
+- cmd_fps		Show FPS					0 or 1
+- cmd_gamma		Set fullscreen gamma intensity			0 to 255
+- cmd_consolecolor	Set console tex color				0 to 255
